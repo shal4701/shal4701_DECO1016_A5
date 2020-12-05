@@ -29,24 +29,63 @@ img {
   display: block;
 }
 
-/* HEADER */
-header {
-  background-image: url("images/img_cover");
+/* NAV */
+.logo {
+  width: 40px;
+  height: 40px;
+
 }
 
+.nav {
+  margin: 0px;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+}
+
+nav {
+  margin-top: -90px;
+  margin-left: 50px;
+}
+
+a {
+  font-family: OpenSans-Bold, Arial, Helvetica, sans-serif;
+  src: "fonts/OpenSans-Bold";
+  color: white;
+  margin: 30px;
+}
+
+/* HEADER */
 .header {
+  padding: 20px;
   align-self: center;
   align-items: center;
   height: 300px;
+  margin: 0px;
+  margin-block-end: 50px;
+  background-size: cover;
+  align-content: center;
+  text-align: center;
 }
 
 .header > h1 {
-  color: #FF8552;
+  color: rgb(255, 255, 255);
 }
 
 .header > p {
   text-align: center;
   color: white;
+}
+
+button {
+  color: white;
+  background-color: #FF8552;
+  border: 2px;
+  border-color: #FF8552;
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+  position: relative;
 }
 
 /* INFORMATION BLOCK */
@@ -122,8 +161,8 @@ form ::content {
 .cta_item2 {
   margin:10px;
 }
-
 }
+
 /* CONTACT */
 @media (min-width: 700px) {
 .contact_parent {
@@ -138,7 +177,6 @@ form ::content {
   margin: 10px;
 }
 }
-
 
 /* FOOTER */
 footer {
