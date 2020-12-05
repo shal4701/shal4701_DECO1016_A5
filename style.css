@@ -29,6 +29,26 @@ img {
   display: block;
 }
 
+/* HEADER */
+header {
+  background-image: url("images/img_cover");
+}
+
+.header {
+  align-self: center;
+  align-items: center;
+  height: 300px;
+}
+
+.header > h1 {
+  color: #FF8552;
+}
+
+.header > p {
+  text-align: center;
+  color: white;
+}
+
 /* INFORMATION BLOCK */
 *{
   box-sizing: border-box;
@@ -38,14 +58,6 @@ main {
   margin-left: clamp(5%, 2.5vw, 0%);
   margin-right: clamp(5%, 2.5vw, 30%);
   margin-block-end: 150px;
-}
-
-.block1_child,
-.block2_child,
-.block3_child,
-.block4_child,
-.block5_child {
-  border: 5px solid blue;
 }
 
 .itemImg :first-child{
@@ -59,7 +71,6 @@ main {
   .block3_parent,
   .block4_parent,
   .block5_parent{
-  border: 5px solid orange;
   display: flex;
   justify-content:  center;
   align-items: center;
@@ -83,6 +94,10 @@ form {
   color: rgb(64, 118, 235);
 }
 
+form ::content {
+  margin-block-end: 5px;
+}
+
 .cta_item2 {
   align-self:  center;
 }
@@ -96,7 +111,6 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid #FF8552;
   }
 
 .cta_item1 {
@@ -116,12 +130,10 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid #FF8552;
   }
 
 .contact_child1,
 .contact_child2 {
-  border: 5px solid blue;
   width: 500px;
   margin: 10px;
 }
