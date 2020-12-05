@@ -2,22 +2,22 @@
 h1 {
   text-align: center;
   font-family: OpenSans-Bold, Arial, Helvetica, sans-serif;
-  src: url(https://repl.it/@ShantanuHalder/shal4701DECO1016A5#OpenSans-Bold.ttf);
+  src: "fonts/OpenSans-Bold";
   font-size: clamp(1.5rem, 4vw + 1rem, 2.5rem);
   text-transform: uppercase;
 }
 
 h3 {
   font-family: OpenSans-Bold, Arial, Helvetica, sans-serif;
-  src: url(https://repl.it/@ShantanuHalder/shal4701DECO1016A5#OpenSans-Bold.ttf);
-  font-size: clamp(0.75rem, 4vw + 1rem, 1.75rem);
+  src: "fonts/OpenSans-Bold";
+  font-size: clamp(1.25rem, 4vw + 1rem, 2.25rem);
   text-transform: uppercase;
   color: #FF8552;
 }
 
 p {
   font-family: OpenSans-Regular, Arial, Helvetica, sans-serif;
-  src: url(https://repl.it/@ShantanuHalder/shal4701DECO1016A5#OpenSans-Regular.ttf);
+  src: "fonts/OpenSans-Regular";
   line-height: 2;
   text-justify: inner-character;
   text-align: justify;
@@ -29,17 +29,46 @@ img {
   display: block;
 }
 
-/* .img_left, .img_right {
- width: clamp(275px, 2.5vw, 551px);
- height: clamp(180px, 2.5vw, 360px);
-} */
-
 /* CONTENT */
-main {
-  margin-left: clamp(5%, 1vw, 15%);
-  margin-right: clamp(5%, 1vw, 15%);
+*{
+  box-sizing: border-box;
 }
 
-.body_left {
-  position: relative;
+main {
+  margin-left: clamp(5%, 1vw, 40%);
+  margin-right: clamp(5%, 1vw, 40%);
+}
+
+.block1_child,
+.block2_child,
+.block3_child,
+.block4_child,
+.block5_child {
+  border: 5px solid blue;
+}
+
+.itemImg :first-child{
+  border: 5px solid red;
+  display: block;
+  margin: auto;
+}
+
+.itemText {
+  border: 5px solid green;
+}
+
+@media (min-width: 768px) {
+  .block1_parent,
+  .block2_parent,
+  .block3_parent,
+  .block4_parent,
+  .block5_parent{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+
+  .itemText {
+    width: 800px;
+  }
 }
